@@ -1,20 +1,28 @@
-# Master's Thesis Excerpts
+# Technical author demo
 
-This is a demo repository to support my application as Technical Author at Canonical.
-
-
-[ma-thesis-excerpts](./ma-thesis-excerpts.pdf) contains dome excerpts of my master's thesis to show the kind of document I can produce
+This is a repository to support my application as Technical Author at Canonical.
 
 ## Content
-- Page 34: A text page, including a musical example created with MuseScore and a structure diagram.
-- Pages 70 and 79: Two large structure diagrams, on a landscape page with several explanatory notes arranged on three columns.
-- Page 86: The first page of the references.
-- 
-## Tools Used
+
+### LilyPond documentation
+
+A small documentation sample based on LilyPond, which includes:
+- An installation how-to
+- A tutorial (engrave a simple public domain song)
+- An explanation of LilyPond file structure
+- A reference page for the `\bar` command
+
+### Master's thesis excerpts
+
+The file [ma-thesis-excerpts](./ma-thesis-excerpts.pdf) contains four selected pages from my master's thesis, as an example of my academic document layout.
+
+## Tools used
+
+- reStructuredText
 - LaTeX
 - TikZ
 - LilyPond
 
-## Copyright Notice
+## Copyright notice
 
-This work is the author's original academic content. Third-party material is included solely for non-commercial scholarly analysis, with permissions reserved by the original copyright holder.
+The work included in [ma-thesis-excerpts](./ma-thesis-excerpts.pdf) is my original academic content. Third-party material is included solely for non-commercial scholarly analysis, with permissions reserved by the original copyright holder.
