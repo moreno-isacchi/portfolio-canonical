@@ -74,5 +74,5 @@ There are no strict rules about whether and when to use omissions, but it is goo
 
 These two lines contain exactly the same notes, both in pitch and duration. The first one has inconsistent omissions and, while LilyPond wouldn't have any particular problem parsing it, to a human reader it can be unclear and harder to understand than the second one.
 
-For more details, see `Duration syntax <portfolio-canonical/lilypond-documentation/duration-syntax.rst>`_.
+For more details, see `Duration syntax <duration-syntax.rst>`_.
 
