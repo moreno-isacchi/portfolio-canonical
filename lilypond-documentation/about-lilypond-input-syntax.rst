@@ -24,7 +24,7 @@ For example, to engrave the pitches D4 A3 C5 A6 C5 D5 E5 F5, the input is:
 Relative mode
 -------------
 
-In relative mode, LilyPond calculates the octave of a pitch in a different way. It determines the octave of a pitch by choosing the pitch that is closest in height to the preceding one. In other words, it selects the octave so that the interval between two following pitches is less than a fifth. Then, it raises or lowers the octave according to the ``'`` or ``,`` marks, if present.
+In relative mode, LilyPond calculates the octave of a pitch in a different way. It determines the octave of a pitch by choosing the pitch that is the closest in height to the preceding one. In other words, it selects the octave so that the interval between two following pitches is less than a fifth. Then, it raises or lowers the octave according to the ``'`` or ``,`` marks, if present.
 
 Relative mode is used as follows:
 ::
@@ -34,7 +34,7 @@ Relative mode is used as follows:
     c,, d e f
   }
 
-This example will engrave D4 A3 C5 A6 C5 D5 E5 F5, the same pitches as the previous example. It's easy to see how the relative block makes syntax easier, avoiding multiple sets of ``'`` or ``,``. Note that the octave of the first pitch after the brace, in this case a ``d``, is calculated by taking into account the pitch stated after the command ``\relative``, in this case ``c'``.
+This example will engrave D4 A3 C5 A6 C5 D5 E5 F5, the same pitches as the previous example. It's easy to see how the relative block makes syntax easier, avoiding multiple sets of ``'`` or ``,``. Note that the octave of the first pitch after the brace, in this case a ``d``, is calculated by taking into account the pitch stated after the command ``\relative``, in this case ``c'`` (which serves only as a reference pitch, and thus is not engraved).
 
 In Western music, especially vocal classical music, where big intervals are rare, ``\relative`` is often more comfortable to write than the default absolute mode. 
 Reducing the amount of ``'`` and ``,``, ``\relative`` contributes to keeping the code clean. However, there are indeed circumstances in which the contrary is true, and absolute mode is preferable (for example, complex polyphonic music).
@@ -56,19 +56,23 @@ While it is true that a musical token needs both pitch and duration, it is commo
 
 It is also possible to omit the note name, and write exclusively the duration. This is helpful when a particular pitch is repeated multiple times, as shown in the following example:
 ::
+
   {
     c4 4 4 4
     d8 8 8 8 8 8 8 8
   }
 
-Here a C3 quarter note is repeated four times, then a D3 eighth note is repeated 8 times.
+Here a C3 quarter note is repeated four times, then a D3 eighth note is repeated eight times.
 
-There are no strict rules about whether and when to use omissions, but it is good practice to stay consistent and favor code clarity instead of sparing typed characters. Consider the following example:
+There are no strict rules about whether and when to use omissions, but it is good practice to stay consistent and favor code clarity. Consider the following example:
 ::
+
   {
     c8 d8 8 d e f8 8 f  
     c8 d d d e f f f 
   }
 
-These two lines contain exactly the same notes, both in pitch and duration. The first one has inconsistent omissions and, while LilyPond wouldn't have any particular issue parsing it, to a human reader it can be unclear and harder to understand than the second one.
+These two lines contain exactly the same notes, both in pitch and duration. The first one has inconsistent omissions and, while LilyPond wouldn't have any particular problem parsing it, to a human reader it can be unclear and harder to understand than the second one.
+
+For more details, see `Duration syntax <portfolio-canonical/lilypond-documentation/duration-syntax.rst>`_.
 

@@ -7,10 +7,10 @@ This is a repository to support my application as Technical Author at Canonical.
 ### LilyPond documentation
 
 A small documentation sample based on LilyPond, which includes:
-- An installation how-to
-- A tutorial (engrave a simple public domain song)
-- An explanation of LilyPond file structure
-- A reference page for the `\bar` command
+- [An installation how-to](lilypond-documentation/how-to-install-lilypond.rst)
+- [A tutorial ("Engrave your first song")](lilypond-documentation/engrave-your-first-song.rst)
+- [An explanation about LilyPond input syntax](lilypond-documentation/about-lilypond-input-syntax.rst)
+- [A reference page for the duration of the notes](lilypond-documentation/duration-syntax.rst)
 
 ### Master's thesis excerpts
 

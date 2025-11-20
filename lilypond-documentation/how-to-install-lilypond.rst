@@ -2,12 +2,12 @@
 How to install LilyPond
 ***********************
 
-This document will guide you through the LilyPond installation process.
+This document guides you through the LilyPond installation process.
 
 Ubuntu
 ^^^^^^
 
-You can install LilyPond using APT, the default package manager.
+You can install LilyPond directly from the package manager.
 
 From the command line, write:
 ::
@@ -29,7 +29,7 @@ You can install LilyPond by downloading the Windows binary files from LilyPond `
 
 Copy the content of the ``.zip`` file into a directory of your choice.
 
-To verify that LilyPond has been correctly installed, move to said directory and write:
+To verify that LilyPond has been correctly installed, move to the installation directory and write:
 ::
   
   lilypond --version

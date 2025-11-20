@@ -66,7 +66,7 @@ In the lyrics block (immediately after ``\addlyrics {``), copy the lyrics of the
 Compile your file
 ^^^^^^^^^^^^^^^^^
 
-The input file is now finished. To compile your ``.ly`` file, open a terminal and type:
+The source file is now finished. To compile your ``.ly`` file, open a terminal and type:
 ::
 
   lilypond <your-source-file.ly>
